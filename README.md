@@ -1,2 +1,2 @@
-# Scrambler-Game
+# Games
 Fun game unscrambling words
