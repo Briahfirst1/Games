@@ -1,0 +1,29 @@
+#Homework
+# 1. get a random number from 1 to 100
+# 2. while their guess != random number:
+# 3.     get a guess from the user
+# 4.     if guess > random number 'too high'
+# 5.     else if guess < random number 'too low'
+# 6.     else 'correct'
+# 7. create an empty list
+# 8. add each guess into a list and print when guess is correct
+
+import random #1
+number = random.randint(1, 100)
+
+guess = ''
+guess_list = []
+while guess != number: 
+    guess = int(input("Let's play a game. Guess a number between 1 and 100 : ")) #3
+    if guess > number: 
+        guess_list.append(guess)
+        print('Too high') 
+    elif guess < number: 
+        guess_list.append(guess)
+        print('Too low') 
+    elif guess == 0:
+        print('Sorry to see you quit! Correct number was:',number)
+        print('Here are your guesses:', guess_list)
+    else: 
+        print('Correct') 
+        print('Here are your guesses:', guess_list)
