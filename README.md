@@ -1,2 +1,2 @@
 # Games
-Fun game unscrambling words
+Have Fun
